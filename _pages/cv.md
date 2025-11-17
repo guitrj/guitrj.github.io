@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "个人简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,26 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## 教育
+* 上海交通大学, 李政道研究所: 天文学博士 (预计 2031 年毕业).
+* 上海交通大学, 物理与天文学院: 物理学学士 (预计 2026 年毕业).
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## 科研
+* 2023 秋—2025 春: 粒子物理理论
+  * 导师: 王伟, 何红建
+  * 研究方向: 圈图计算与费曼积分, 量子色动力学有效理论, 非微扰量子场论.
+* 2025 春—至今: 天体物理理论
+  * 导师: 赖东 (Dong Lai)
+  * 研究方向: 致密天体 (磁星辐射, 黑洞双星合并, 潮汐瓦解事件等), 系外行星 (行星轨道动力学, 行星刚体动力学等) 与天体物理动力学 (非线性力学, 混沌现象等) 
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## 出版物 / 学术论文
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
+学术报告
+------
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams

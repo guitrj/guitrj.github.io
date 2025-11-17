@@ -24,17 +24,17 @@ repository               : "guitrj/guitrj.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Tu Guo / @归途如稽"
+  name             : "Tu Guo/郭图@归途如稽"
   pronouns         : "he/him"  
-  bio              : "SJTU/TDLI senior undergraduate"
+  bio              : "SJTU/TDLI Undergraduate"
   location         : "Shanghai, China"
-  employer         : "Shanghai Jiao Tong University/Tsung-Dao Lee Institute"
+  employer         : "SJTU/TDLI"
   uri              : "https://guitrj.github.io"
   email            : "guitrj_sjtu@qq.com" 
 
   # Academic websites
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  arxiv            : "https://arxiv.org/search/?query=Guo%2C+Tu&searchtype=author&abstracts=hide&order=-announced_date_first&size=50"  # URL - Update with the correct link to your profile
   googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : "https://inspirehep.net/authors/2946420"
   impactstory      : # URL
@@ -45,10 +45,10 @@ author:
   scopus           : # URL
 
   # Repositories and software development
+  github           : # "academicpages"
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -77,12 +77,12 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
+  zhihu            : "gui-tu-ru-ji" # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
-    title: 'Books'
+    # title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
@@ -218,13 +218,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -252,15 +246,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -270,15 +255,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _talks
   - scope:
       path: ""
