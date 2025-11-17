@@ -1,96 +1,67 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+> 使用模板: [academic pages](https://github.com/academicpages/academicpages.github.io)
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+(感谢带领我走入天体物理社群的学长 [Fangyuan Yu@Princeton](https://web.astro.princeton.edu/people/fangyuan-yu), 因为有你的关注和鼓舞, 我有了能够重新拾取追求未来的勇气.)
 
-# Getting Started
+## 最新动态 (Up-to-date)
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+2025/11/17: 周四参加李所一个[会议](https://indico-tdli.sjtu.edu.cn/event/4381/), 参与意义略大于学术意义, 很多大佬 (Jianwei Pan 等) 会出席. 
 
-See more info at https://academicpages.github.io/
+## 关于本人
 
-## Running locally
+我是郭图 (Tu Guo) / @归途如稽 (例如我的[知乎](https://www.zhihu.com/people/gui-tu-ru-ji)), 上海交通大学 (SJTU) 物理与天文学院 2022 级强基本科生, 李政道研究所 (TDLI) 2026 级直博生. 曾研究方向 [hep-th], [hep-ph], [hep-lat], 导师为[王伟](https://www.physics.sjtu.edu.cn/jsml/wangwei.html)与[何红建](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html)教授; 现研究方向为 [astro-ph], 导师为[赖东 (Dong Lai)](https://donglai6.github.io) 教授, 研究课题包含致密天体与地外行星. 
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+## 关于本站
 
-1. Clone the repository and made updates as detailed above.
+我将持续在这个网站上更新我的**科研进展**与**学习动态**, 并分享一些个人思考. 我也会选择性地将过往在知乎等平台发布的专业笔记和思考沉淀于此. 
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+欢迎通过邮件 (guitrj_sjtu@qq.com) 交流. 
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+### 📖基础学习思考
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+本站的学习笔记将更侧重于**“思考的足迹”**而非**“知识的罗列”**。
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+我在本部分关注的是在个人过去不同学习阶段中 (例如中学物理竞赛、普通物理、四大力学、量子场论、广义相对论及相关数学方法) 的思考与感悟. 个人经验有限, 但希望能为同行者提供有价值的参考.
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+未来，这里的内容也会扩展到天文及天体物理方向的专业理论学习和部分前沿技术资讯. 
 
-## Using Docker
+### 🧑‍💻个人科研动态
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+我的研究风格倾向于**结合形式理论的洞察与半解析计算的直观性**。
 
-You can build and execute the container by running the following command in the repository:
+我可能会使用轻量级数值模拟 (评判标准: 近 C 语言的优化版本在个人 PC 上运行 ~ 10<sup>0</sup>-10<sup>1</sup> 小时以内) 作为辅助手段, 将复杂的物理过程进行可视化呈现, 以辅助理论分析. 
 
-```bash
-chmod -R 777 .
-docker compose up
-```
+虽然我的研究手段不排斥抽象的数学工具, 但更倾向与将复杂问题化繁为简的过程, 而非诉诸纯粹繁复的抽象指标推演与形式证明. 
 
-You should now be able to access the website from `localhost:4000`.
+我的研究目标是产出具有**独特见解**与**不可替代价值**的研究成果, 并力求打磨高价值、易于复现的学术工作.
 
-### Using the DevContainer in VS Code
+### 🎮 个人爱好
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+同时欢迎交流娱乐爱好：
 
-# Maintenance
+- **游戏 (Games):** 主机游戏, 动作游戏 (ACT), 复古游戏, 魂类 (Souls-like), 音乐节奏 (Rhythm), ARPG, 恐怖/生存恐怖, 第三人称射击 (TPS) 等.
+- **影视 (Film/TV):** 科幻, 惊悚, 烧脑, 历史, 动作. 对编剧、导演与电影解读亦有兴趣.
+- **音乐 (Music):** 电子音乐 (Electronic), 电子舞曲 (EDM), 欧美流行/乡村, 电子流行 (Electric-pop), OST 原声带, 严肃音乐 (Classical), 氛围音乐 (Ambient), J-Pop 等. 
+- **模玩 (Hobby):** 变形金刚 (G1, 领袖之证, 真人世, IDW), 国模等; 我也是小胶佬, 手艺练习ing…
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## AI 使用
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+近期我的快速知识获取与开发, 大量受助于 GPT 5.1 与 Gemini 3.0 (已静默部署于 Gemini 的 Canvas 功能中), 尤其是感谢 Gemini 3.0 的前端开发知识, 让我敢于尝试开通运营一个个人站点. 
 
-## Bugfixes and enhancements
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## 友情链接🤗:
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+上海交大物理与天文学院: [SJTU SPA](https://www.physics.sjtu.edu.cn)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+上海交大李政道研究所: [TDLI](https://tdli.sjtu.edu.cn)
+
+李所会议列表: [indico](https://indico-tdli.sjtu.edu.cn)
+
+arXiv: [astro-ph.HE](https://arxiv.org/list/astro-ph.HE/recent), [astro-ph.EP](https://arxiv.org/list/astro-ph.EP/recent), [Dong Lai’s Publications](https://arxiv.org/search/?query=Lai%2C+Dong&searchtype=author&abstracts=hide&order=-announced_date_first&size=50)
+
+Inspire HEP: [Inspire](https://inspirehep.net)
+
+ADS-astronomy: [ADS](https://ui.adsabs.harvard.edu)
+
+Dong Lai’s Homepage: [github.io](https://donglai6.github.io)
+
