@@ -4,7 +4,7 @@
 
 ## 最新动态 (Up-to-date)
 
-2025/11/17: 周四参加李所一个[会议](https://indico-tdli.sjtu.edu.cn/event/4381/), 参与意义略大于学术意义, 很多大佬 (Jianwei Pan 等) 会出席. 
+会实时更新于 "博客动态" 分页. 
 
 ## 关于本人
 
