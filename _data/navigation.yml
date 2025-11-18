@@ -7,10 +7,22 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 
-main:   
-        
+main:
+
+  - title: "主页"
+    url: /
+
   - title: "博客动态"
     url: /year-archive/
-    
+
+  - title: "出版物"
+    url: /publications/
+
+  - title: "学术报告"
+    url: /talks/
+
+  - title: "教学"
+    url: /teaching/
+
   - title: "个人简历"
     url: /cv/
