@@ -9,9 +9,9 @@ redirect_from:
 
 (感谢带领我走入天体物理社群的学长 [Fangyuan Yu@Princeton](https://web.astro.princeton.edu/people/fangyuan-yu), 因为有你的关注和鼓舞, 我有了能够重新拾取追求未来的勇气.)
 
-## 最新动态 (Up-to-date)
+## 动态 (Up-to-date)
 
-2025/11/17: 周四要参加李所的[浦江创新论坛](https://indico-tdli.sjtu.edu.cn/event/4381/), 参与意义略大于学术意义, 很多大佬 (Jianwei Pan 等) 会出席. 
+实时动态将更新于 “博客动态” 分页. 
 
 ## 关于本人
 
