@@ -24,8 +24,5 @@ main:
   - title: "教学"
     url: /teaching/
 
-  - title: "Talk Map"
-    url: /talkmap.html
-
   - title: "个人简历"
     url: /cv/
