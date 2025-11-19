@@ -9,9 +9,6 @@
 
 main:
 
-  - title: "主页"
-    url: /
-
   - title: "博客动态"
     url: /year-archive/
 

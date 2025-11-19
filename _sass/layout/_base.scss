@@ -12,13 +12,12 @@ body {
   color: var(--global-text-color);
   
   /* 替换原本的单色背景，使用深邃的径向渐变模拟宇宙星空 */
-  background-color: #0b0d17; 
+  background-color: #0b0d17;
   background-image: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background-attachment: fixed; /* 让背景固定，滚动页面时产生视差/深邃感 */
 
   margin: 0;
-  padding: $masthead-height 0 0;
-  padding-bottom: 9em;
+  padding: $masthead-height 0 0; /* offset fixed masthead without extra top gap */
   font-family: $global-font-family;
   line-height: 1.6; /*稍微增加行高，提升阅读体验 */
 
