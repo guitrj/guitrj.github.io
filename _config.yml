@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "default" # Only the default dark theme is available
 title                    : "Tu Guo's homepage"
 title_separator          : "-"
 name                     : &name "Tu Guo"
