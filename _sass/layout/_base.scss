@@ -26,6 +26,11 @@ body {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 视窗高度的 100% */
+  margin: 0; /* 去除 body 默认边距，解决部分页眉过低问题 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -387,3 +392,15 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
+
+/* 让页脚自动沉底 */
+.page__footer {
+  margin-top: auto; /* 关键：将页脚推到最底部 */
+  width: 100%;
+}
+
+/* 确保中间内容区域占满剩余空间 */
+#main, .initial-content {
+  flex: 1;
+  width: 100%;
+}

@@ -268,7 +268,7 @@
     padding: 5px;
     border: 1px solid var(--global-border-color);
     border-radius: $border-radius;
-    background: #fff;
+    background: #24292e;
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
@@ -308,12 +308,11 @@
       z-index: 1;
     }
 
-    li {
-      display: block;
-      border-bottom: 1px solid var(--global-border-color);
-
-      &:last-child {
-        border-bottom: none;
+    li a {
+      color: #fff; 
+      &:hover {
+        color: #fff; /* 悬停时保持白色或改为微亮色 */
+        background-color: #3b444b; /* 悬停时的背景稍微变亮一点 */
       }
     }
   }

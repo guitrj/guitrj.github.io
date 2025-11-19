@@ -143,3 +143,10 @@
     width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+.masthead {
+  // ... existing code ...
+  margin-top: 0 !important; /* 强制顶部无边距 */
+  top: 0;
+  // ... existing code ...
+}
