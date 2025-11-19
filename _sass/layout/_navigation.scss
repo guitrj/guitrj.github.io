@@ -173,13 +173,16 @@
    ========================================================================== */
 
 .greedy-nav {
-  position: relative;
-  min-width: 250px;
-  background: var(--global-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  min-width: 0;
+  background: transparent;
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 0;
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
     text-decoration: none;
@@ -189,121 +192,25 @@
     }
   }
 
-  button {
-    position: absolute;
-    height: 2.5rem;
-    right: 0;
-    padding: 0 0.5rem;
-    border: 0;
-    outline: none;
-    background-color: var(--global-base-color);
-    color: #fff;
-    cursor: pointer;
-    z-index: 100;
-  }
-
   .visible-links {
-    display: table;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
+      display: flex;
+      align-items: center;
 
       &:first-child {
         font-weight: bold;
-        text-wrap: wrap;
 
         a {
           margin-left: 0;
         }
-      }
-
-      &:last-child {
-        a {
-          margin-right: 0;
-        }
-      }
-    }
-
-    a {
-      position: relative;
-
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: var(--global-border-color);
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
-      }
-
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
-      }
-    }
-  }
-
-  .hidden-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid var(--global-border-color);
-    border-radius: $border-radius;
-    background: #24292e;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-
-    a {
-      margin: 0;
-      padding: 10px 20px;
-      font-size: $type-size-5;
-
-      &:hover {
-        color: var(--global-masthead-link-color-hover);
-        background: var(--global-border-color);
-      }
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -11px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: var(--global-border-color) transparent;
-      display: block;
-      z-index: 0;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: #fff transparent;
-      display: block;
-      z-index: 1;
-    }
-
-    li a {
-      color: #fff; 
-      &:hover {
-        color: #fff; /* 悬停时保持白色或改为微亮色 */
-        background-color: #3b444b; /* 悬停时的背景稍微变亮一点 */
       }
     }
   }
