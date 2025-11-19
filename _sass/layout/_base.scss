@@ -10,13 +10,17 @@ html {
 body {
   /* Set via _themes.scss */
   color: var(--global-text-color);
-  background-color: var(--global-bg-color);
+  
+  /* 替换原本的单色背景，使用深邃的径向渐变模拟宇宙星空 */
+  background-color: #0b0d17; 
+  background-image: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-attachment: fixed; /* 让背景固定，滚动页面时产生视差/深邃感 */
 
   margin: 0;
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.6; /*稍微增加行高，提升阅读体验 */
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -29,11 +33,28 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+
+  /* Gemini 风格流光渐变 */
+  /* 从清新的蓝色过渡到紫粉色 */
+  background: linear-gradient(45deg, #4c8bf5, #c58af9); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* 兼容性回退 */
+  
+  /* 稍微调整字间距，增加现代感 */
+  letter-spacing: -0.02em; 
 }
 
+/* 针对 h1 单独微调，可能需要更醒目 */
 h1 {
   margin-top: 0;
   font-size: $type-size-3;
+  /* h1 可以用更丰富的渐变 */
+  background: linear-gradient(to right, #6bb1ff, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
@@ -100,11 +121,14 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid var(--global-border-color);
+  /* 边框改为发光的蓝色，而不是沉闷的灰色 */
+  border-left: 0.25em solid #4c8bf5; 
+  color: #a0aec0; /* 引用文字颜色稍淡 */
+  background: rgba(255, 255, 255, 0.03); /* 极淡的背景，增加层次感 */
+  border-radius: 0 8px 8px 0;
 
   cite {
     font-style: italic;
-
     &:before {
       content: "\2014";
       padding-right: 5px;

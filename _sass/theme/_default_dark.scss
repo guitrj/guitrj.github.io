@@ -1,54 +1,79 @@
 /* ==========================================================================
-   DARK THEME
+   DARK THEME (Starry Night / Gemini Style) - FORCED DEFAULT
    ========================================================================== */
 
-/* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
+/* NOTE: This file now applies to :root directly, forcing the theme 
+   without needing JavaScript or data-theme attributes.
+*/
 
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+/* System Color Palette */
+$gray                       : #a0a0a0;
+$dark-gray                  : #1a1c29; 
+$darker-gray                : #0f111a;
+$light-gray                 : #8b9bb4;
 
-/* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+/* Backgrounds - Deep Space */
+$background                 : #0b0d17; /* 极深蓝/黑 */
+$background-light           : #15192b; /* 卡片/侧边栏背景 */
+$background-lighter         : #1f253d; /* 强调背景 */
 
-/* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
+/* Text Colors - High Contrast */
+$text                       : #e0e6ed; /* 蓝白色文字，确保在深色背景清晰 */
+$text-light                 : #a0aec0; /* 次级文字 */
+
+/* Accents - Gemini Neon */
+$link                       : #8ab4f8; /* 亮蓝色链接 */
+$link-dark                  : #aecbfa; /* 悬停 */
+$link-light                 : #c58af9; /* 访问后/辅助色 */
+
+/* Status Colors */
+$danger-color               : #ff8a80;
+$info-color                 : #82b1ff;
+$notice-color               : #a0a0a0;
+$success-color              : #b9f6ca;
+$warning-color              : #ffe57f;
+
+/* Layout Settings */
+$border-radius              : 8px;
+$box-shadow                 : 0 4px 20px rgba(0, 0, 0, 0.6);
+$global-transition          : all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 $masthead-height            : 70px;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
-html[data-theme="dark"] {
+/* Apply Variables Globally (No [data-theme] selector) */
+:root {
     --global-base-color                 : #{$background};
     --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
+    --global-footer-bg-color            : #06070e; /* 这里的变量名可能在base中被使用 */
+    
+    --global-border-color               : #2d3748;
     --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
+    
+    --global-code-background-color      : #1a1c29;
+    --global-code-text-color            : #e2e8f0;
+    
+    --global-fig-caption-color          : #{$text-light};
+    
     --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};
+    
     --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
+    --global-masthead-link-color-hover  : #{$link};
+    
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #f3f3f3;
+    --global-text-color-light           : #{$text-light};
+    
     --global-thead-color                : #{$background-lighter};
+}
+
+/* Force body background here as well to be safe */
+body {
+    background-color: #0b0d17 !important;
+    background-image: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
+    background-attachment: fixed !important;
+    color: #e0e6ed !important;
 }

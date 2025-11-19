@@ -1,42 +1,35 @@
 /* ==========================================================================
-   FOOTER
+   FOOTER - Dark Theme Fix
    ========================================================================== */
 
 .page__footer {
   @include clearfix;
-  background-color: var(--global-footer-bg-color);
-  color: var(--global-text-color-light);
-
   float: left;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
   clear: both;
-
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
-  height: auto;
-  /* sticky footer fix end */
-
   margin-top: 3em;
-
+  
+  /* 强制深色背景 */
+  color: #a0aec0 !important;
+  background-color: #06070e !important; 
+  border-top: 1px solid #1f253d;
+  
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  border-top: 1px solid var(--global-dark-border-color);
+  background-color: var(--global-footer-bg-color);
+  padding-bottom: 3em;
 
   footer {
-    @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    max-width: 100%;
-    padding: 0 1em 1em;
+    @include container;
+    padding: 2em 1em;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
+    @include breakpoint($medium) {
+      padding-left: 1em;
+      padding-right: 1em;
     }
   }
 
@@ -46,6 +39,7 @@
 
     &:hover {
       text-decoration: underline;
+      color: #8ab4f8;
     }
   }
 
@@ -53,7 +47,7 @@
   .fab,
   .far,
   .fal {
-    color: var(--global-text-color-light);
+    color: #8ab4f8; /* 图标颜色 */
   }
 }
 
@@ -73,7 +67,7 @@
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: $sans-serif-narrow;
+    font-family: $sans-serif;
     font-size: $type-size-6;
     text-transform: uppercase;
   }
@@ -86,11 +80,5 @@
   a {
     padding-right: 10px;
     font-weight: bold;
-  }
-
-  .social-icons {
-    a {
-      white-space: nowrap;
-    }
   }
 }
