@@ -7,7 +7,7 @@ permalink: /particles/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three.js 手势交互粒子系统 v4.4 (Slow Breath & Comments)</title>
+    <title>Three.js 手势交互粒子系统 v4.7 (Smaller Heart)</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- MediaPipe -->
@@ -83,6 +83,7 @@ permalink: /particles/
         }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
+        /* 摄像头预览窗口样式 */
         #cam-preview {
             position: absolute;
             bottom: 24px;
@@ -94,11 +95,11 @@ permalink: /particles/
             overflow: hidden;
             border: 1px solid rgba(255,255,255,0.1);
             background: #000;
-            opacity: 0.7;
+            opacity: 0.9;
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
             transition: opacity 0.3s;
+            display: none; /* 默认隐藏 */
         }
-        #cam-preview:hover { opacity: 1; }
     </style>
 </head>
 <body>
@@ -135,12 +136,22 @@ permalink: /particles/
         <div class="mb-4">
             <label class="block text-[10px] uppercase text-gray-500 mb-3 font-bold tracking-widest">Visual Effects</label>
             
+            <!-- 颜色选择器 -->
             <div class="flex items-center justify-between mb-3 bg-white/5 p-2 rounded-lg border border-white/5">
                 <span class="text-xs text-gray-400 font-medium">Particle Color</span>
                 <div class="flex items-center space-x-2">
                     <span class="text-[10px] text-gray-500 font-mono" id="colorCode">#40c9ff</span>
                     <input type="color" id="colorPicker" value="#40c9ff" class="w-5 h-5 rounded cursor-pointer border-none bg-transparent">
                 </div>
+            </div>
+
+            <!-- 摄像头开关 -->
+            <div class="flex items-center justify-between mb-3 bg-white/5 p-2 rounded-lg border border-white/5">
+                <span class="text-xs text-gray-400 font-medium">Camera Feed</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="camToggle" class="sr-only peer">
+                    <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-500"></div>
+                </label>
             </div>
         </div>
         
@@ -150,7 +161,6 @@ permalink: /particles/
     </div>
 
 <!-- ================= 顶点着色器 (Vertex Shader) ================= -->
-<!-- 控制粒子的位置、大小和闪烁频率 -->
 <script type="x-shader/x-vertex" id="vertexshader">
     attribute float size;
     attribute float random;
@@ -166,7 +176,6 @@ permalink: /particles/
         vec3 pos = position;
         
         // [可调参数] 波动幅度
-        // 0.1 是波动的强度系数，数字越大，粒子在手张开时上下浮动越明显
         float wave = sin(time * 2.0 + pos.x * 0.1) * 0.1 * handOpenness;
         pos.y += wave;
 
@@ -174,25 +183,19 @@ permalink: /particles/
         float dist = -mvPosition.z;
 
         // [可调参数] 粒子透视大小
-        // 300.0 是透视强度的参考值，值越大，离相机近的粒子看起来越大
-        // (0.8 + 0.4 * random) 让粒子大小在 0.8~1.2 倍之间随机变化
         gl_PointSize = size * (0.8 + 0.4 * random) * pixelRatio * (300.0 / dist);
 
         gl_Position = projectionMatrix * mvPosition;
 
-        // [可调参数] 呼吸/闪烁速度
-        // 这里改为 1.5 (原为 3.0)，使闪烁速度慢了 50%
-        // 如果想要更慢，可以改得更小 (例如 0.5)
+        // [可调参数] 呼吸/闪烁速度 (1.5 = 慢速)
         float twinkle = sin(time * 1.5 + random * 10.0);
         
-        // [可调参数] 基础透明度和闪烁幅度
-        // 0.6 是基础不透明度，0.4 是闪烁叠加的最大值
-        vAlpha = 0.6 + 0.4 * twinkle;
+        // [可调参数] 基础透明度
+        vAlpha = 0.5 + 0.5 * twinkle;
     }
 </script>
 
 <!-- ================= 片元着色器 (Fragment Shader) ================= -->
-<!-- 控制粒子的外观形状 (实心圆/光晕圆) -->
 <script type="x-shader/x-fragment" id="fragmentshader">
     uniform vec3 color;
     varying float vAlpha;
@@ -201,12 +204,10 @@ permalink: /particles/
         vec2 xy = gl_PointCoord.xy - vec2(0.5);
         float r = length(xy);
 
-        // 硬切割：丢弃半径超过 0.5 的像素，形成圆形
+        // 硬切割：实心圆
         if (r > 0.5) discard;
 
-        // [可调参数] 边缘平滑度 (抗锯齿)
-        // smoothstep(0.05, 0.08, r) 
-        // 这里的数值决定边缘的锐利程度。数值越接近，边缘越硬。
+        // 极微小的抗锯齿
         float edge = 1.0 - smoothstep(0.05, 0.08, r);
         
         gl_FragColor = vec4(color, vAlpha * edge);
@@ -215,13 +216,12 @@ permalink: /particles/
 
 <script>
     // ================= 全局配置 (CONFIGURATION) =================
-    // [可调参数] 这里是所有核心视觉参数的入口
     const CONFIG = {
-        particleCount: 30000, // 粒子总数：太多会卡顿，太少会稀疏
-        baseSize: 1.2,        // 粒子基础大小：影响每个点的视觉直径 (单位: 像素)
-        defaultColor: new THREE.Color(0x40c9ff), // 默认颜色
-        cameraZ: 25,          // 摄像机距离：越小物体越近，越大物体越远
-        scatterRadius: 35     // 散开范围：手张开时，粒子最大飞散到多远的半径
+        particleCount: 30000, 
+        baseSize: 1.2,        
+        defaultColor: new THREE.Color(0x40c9ff), 
+        cameraZ: 25,          
+        scatterRadius: 35     
     };
 
     const STATE = {
@@ -237,7 +237,7 @@ permalink: /particles/
     // ================= THREE.JS 核心设置 =================
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x020205); 
-    scene.fog = new THREE.FogExp2(0x020205, 0.015); // 雾化效果，增加深邃感
+    scene.fog = new THREE.FogExp2(0x020205, 0.015); 
 
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 200);
     camera.position.z = CONFIG.cameraZ;
@@ -273,9 +273,7 @@ permalink: /particles/
     const randoms = new Float32Array(CONFIG.particleCount); 
     const sizes = new Float32Array(CONFIG.particleCount);   
     
-    // 初始化粒子
     for (let i = 0; i < CONFIG.particleCount; i++) {
-        // 初始随机分布 (球形)
         const r = CONFIG.scatterRadius * (0.5 + Math.random());
         const theta = Math.random() * Math.PI * 2;
         const phi = Math.acos(2 * Math.random() - 1);
@@ -311,7 +309,6 @@ permalink: /particles/
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
         ctx.fillStyle = '#FFFFFF';
-        // [可调参数] 字体大小和样式
         ctx.font = '900 100px "Segoe UI", Arial, sans-serif'; 
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -321,12 +318,9 @@ permalink: /particles/
         const data = imageData.data;
         const validPoints = [];
         
-        // [可调参数] 采样步长 (y += 3, x += 3)
-        // 步长越小，采样点越密，文字越清晰，但需要的粒子数更多
         for (let y = 0; y < canvas.height; y += 3) {
             for (let x = 0; x < canvas.width; x += 3) {
                 if (data[(y * canvas.width + x) * 4] > 50) {
-                    // [可调参数] 文字的世界坐标缩放 (0.06)
                     const worldX = (x - canvas.width / 2) * 0.06; 
                     const worldY = -(y - canvas.height / 2) * 0.06; 
                     validPoints.push({x: worldX, y: worldY});
@@ -343,6 +337,8 @@ permalink: /particles/
         
         if (shapeType === 'text') {
             textPoints = getPointsFromText("I ❤️ SJTU");
+        } else if (shapeType === 'heart') {
+            textPoints = getPointsFromText("❤️");
         }
 
         for (let i = 0; i < count; i++) {
@@ -350,31 +346,37 @@ permalink: /particles/
             const idx = i * 3;
 
             if (shapeType === 'heart') {
-                const t = Math.random() * Math.PI * 2;
-                const r = Math.sqrt(Math.random()); 
-                // [可调参数] 爱心形状公式系数
-                let px = 16 * Math.pow(Math.sin(t), 3);
-                let py = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
-                x = px * r * 0.5;
-                y = py * r * 0.5;
-                z = (Math.random() - 0.5) * 5 * r; 
+                if (textPoints.length > 0) {
+                    const p = textPoints[i % textPoints.length];
+                    
+                    // [修改] 缩放比例从 3.5 调整为 2.5 (缩小约 30%)
+                    const scale = 2.5;
+                    
+                    x = p.x * scale;
+                    // [修改] Y轴坐标减去 2.5，使图案整体稍微下移
+                    y = p.y * scale - 2.5;
+                    
+                    z = (Math.random() - 0.5) * 3.0 * scale; 
+                } else {
+                    x = 0; y = 0; z = 0;
+                }
 
             } else if (shapeType === 'saturn') {
                 const ratio = i / count;
-                if (ratio < 0.6) { // 60% 粒子做星球主体
+                if (ratio < 0.6) { 
                     const phi = Math.acos(-1 + (2 * i / (count * 0.6)));
                     const theta = Math.sqrt((count * 0.6) * Math.PI) * phi;
                     const r = 5;
                     x = r * Math.cos(theta) * Math.sin(phi);
                     y = r * Math.sin(theta) * Math.sin(phi);
                     z = r * Math.cos(phi);
-                } else { // 40% 粒子做光环
+                } else { 
                     const angle = Math.random() * Math.PI * 2;
-                    const r = 8 + Math.random() * 6; // 光环半径范围 8~14
+                    const r = 8 + Math.random() * 6; 
                     x = r * Math.cos(angle);
                     z = r * Math.sin(angle); 
-                    y = (Math.random() - 0.5) * 0.3; // 光环厚度
-                    const tilt = 0.4; // 倾斜角
+                    y = (Math.random() - 0.5) * 0.3; 
+                    const tilt = 0.4; 
                     const y_new = y * Math.cos(tilt) - x * Math.sin(tilt);
                     const x_new = y * Math.sin(tilt) + x * Math.cos(tilt);
                     x = x_new;
@@ -385,7 +387,6 @@ permalink: /particles/
                     const p = textPoints[i % textPoints.length];
                     x = p.x;
                     y = p.y;
-                    // [可调参数] 文字的 3D 厚度 (2.0)
                     z = (Math.random() - 0.5) * 2.0;
                 } else {
                     x = (Math.random() - 0.5) * 20;
@@ -413,6 +414,7 @@ permalink: /particles/
     previewCtx.scale(-1, 1);
 
     function onResults(results) {
+        // 即使隐藏，Canvas 也必须绘制，否则逻辑可能会断
         previewCtx.drawImage(results.image, 0, 0, previewCanvas.width, previewCanvas.height);
         
         if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
@@ -428,8 +430,6 @@ permalink: /particles/
             const dists = tips.map(tip => Math.hypot(tip.x - wrist.x, tip.y - wrist.y));
             const avgDist = dists.reduce((a, b) => a + b) / 5;
             
-            // [可调参数] 手势张合灵敏度映射
-            // 0.2 是握拳时的预估距离，3.3 是放大倍数
             let rawOpenness = (avgDist - 0.2) * 3.3; 
             rawOpenness = Math.max(0, Math.min(1, rawOpenness));
             
@@ -464,8 +464,6 @@ permalink: /particles/
     function animate() {
         requestAnimationFrame(animate);
 
-        // [可调参数] 动画时间步长 (0.03)
-        // 影响所有基于时间的动画（如闪烁、波浪、漂浮）的速度
         const dt = 0.03;
         STATE.time += dt;
         
@@ -476,51 +474,40 @@ permalink: /particles/
         
         // 旋转逻辑
         if (STATE.handDetected) {
-            // [可调参数] 手势旋转灵敏度
-            // 系数越大，手移动一点点，物体旋转幅度就越大
-            const targetRotY = -(STATE.handPosition.x - 0.5) * 3.0; 
-            const targetRotX = (STATE.handPosition.y - 0.5) * 2.5; 
+            // [可调参数] 手势旋转灵敏度 (已增大)
+            // handPosition.x 范围 0~1，中心为 0.5。
+            // 当手在画面正中心 (0.5) 时，targetRotY = -(0.5 - 0.5) * 8.0 = 0
+            // 此时粒子群旋转角度归零，正面对着屏幕。
+            const targetRotY = -(STATE.handPosition.x - 0.4) * 8.0; 
+            const targetRotX = (STATE.handPosition.y - 0.6) * 6.0; 
             
-            // 0.1 是旋转跟随的平滑系数
             particles.rotation.y += (targetRotY - particles.rotation.y) * 0.1;
             particles.rotation.x += (targetRotX - particles.rotation.x) * 0.1;
         } else {
-            // [可调参数] 待机自动旋转速度
             particles.rotation.y += 0.001; 
             particles.rotation.x += (0 - particles.rotation.x) * 0.05;
         }
 
-        const openness = STATE.handOpenness; // 0 (握拳) -> 1 (张手)
-        
-        // [可调参数] 粒子移动速度/插值系数 (0.1)
-        // 值越大，粒子飞向目标位置的速度越快，反应越灵敏，但可能越生硬
+        const openness = STATE.handOpenness; 
         const lerpFactor = 0.1; 
 
         for (let i = 0; i < CONFIG.particleCount; i++) {
             const i3 = i * 3;
             
-            // 目标位置 A: 具体的形状 (Text, Heart, Saturn)
             const tx = STATE.targetPositions[i3];
             const ty = STATE.targetPositions[i3+1];
             const tz = STATE.targetPositions[i3+2];
 
-            // 目标位置 B: 散开的星尘状态
-            // [可调参数] 漂浮动画参数
-            // sin(STATE.time * 0.5) 控制漂浮的频率，* 2.0 控制漂浮的幅度
             const rx = STATE.randomOffsets[i3] + Math.sin(STATE.time * 0.5 + i) * 2.0;
             const ry = STATE.randomOffsets[i3+1] + Math.cos(STATE.time * 0.3 + i) * 2.0;
             const rz = STATE.randomOffsets[i3+2];
 
-            // [可调参数] 混合曲线
-            // openness * openness 是一种非线性混合，使得手掌刚张开时粒子散开得慢，完全张开时散得远
             const mixRatio = openness * openness; 
 
-            // 计算这一帧的最终目标位置 (在 A 和 B 之间混合)
             const destX = tx * (1.0 - mixRatio) + rx * mixRatio;
             const destY = ty * (1.0 - mixRatio) + ry * mixRatio;
             const destZ = tz * (1.0 - mixRatio) + rz * mixRatio;
 
-            // 更新粒子位置
             positionsArray[i3]   += (destX - positionsArray[i3]) * lerpFactor;
             positionsArray[i3+1] += (destY - positionsArray[i3+1]) * lerpFactor;
             positionsArray[i3+2] += (destZ - positionsArray[i3+2]) * lerpFactor;
@@ -550,6 +537,13 @@ permalink: /particles/
         const hex = e.target.value;
         document.getElementById('colorCode').innerText = hex;
         shaderMaterial.uniforms.color.value = new THREE.Color(hex);
+    });
+
+    // [新增] 摄像头开关监听
+    document.getElementById('camToggle').addEventListener('change', (e) => {
+        const preview = document.getElementById('cam-preview');
+        // 如果选中，显示 Block；否则 None
+        preview.style.display = e.target.checked ? 'block' : 'none';
     });
 
     window.addEventListener('resize', () => {
