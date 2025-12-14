@@ -21,7 +21,7 @@ My name is **Tu Guo** **(郭图)**, also known as **@归途如稽** (for example
 
 My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hongjian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
 
-## 关于本站
+## About this Site
 
 I will continuously update this website with my **research progress** and **learning activities**, and occasionally share personal reflections. Selected notes and thoughts previously published on platforms such as Zhihu would also be archived here. 
 
