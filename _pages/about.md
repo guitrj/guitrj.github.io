@@ -1,74 +1,78 @@
 ---
 permalink: /
-title: "郭图@归途如稽"
+title: "郭图@归途如稽(Tu Guo@guitrj_sjtu)"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-(感谢带领我走入天体物理社群的学长 [Fangyuan Yu@Princeton](https://web.astro.princeton.edu/people/fangyuan-yu), 因为有你的关注和鼓舞, 我有了能够重新拾取追求未来的勇气.)
+***I am much grateful to my senior alumnus [Fangyuan Yu@Princeton](https://web.astro.princeton.edu/people/fangyuan-yu) (俞方远), who guided me into the astrophysics society. Without your encouragement, I would not be able to resume pursuing my future.***
 
-## 动态 (Up-to-date)
+## Post Update (Up-to-date)
 
-实时动态将更新于 “博客动态” 分页. 
+Real-time updates will be posted on the “Blog Updates” page.
 
-## 关于本人
+(Posts at earlier times are still be written in simplified Chinese, which I don’t have enough time to translate into English.🤧)
 
-我是郭图 (Tu Guo) / @归途如稽 (例如我的[知乎](https://www.zhihu.com/people/gui-tu-ru-ji)), 上海交通大学 (SJTU) 物理与天文学院 2022 级强基本科生, 李政道研究所 (TDLI) 2026 级直博生. 曾研究方向 [hep-th], [hep-ph], [hep-lat], 导师为[王伟](https://www.physics.sjtu.edu.cn/jsml/wangwei.html)与[何红建](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html)教授; 现研究方向为 [astro-ph], 导师为[赖东 (Dong Lai)](https://donglai6.github.io) 教授, 研究课题包含致密天体与地外行星. 
+## About Me
+
+My name is **Tu Guo** **(郭图)**, also known as **@归途如稽** (for example, on [Zhihu](https://www.zhihu.com/people/gui-tu-ru-ji)). I am an undergraduate student (admission in 2022, Strengthening Foundation Program/强基计划) at the School of Physics and Astronomy, **Shanghai Jiao Tong University (SJTU)**, and a direct-PhD student (admission in 2026) at the Department of Astronomy and Astrophysics, **Tsung-Dao Lee Institute (TDLI)**.
+
+My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hongjian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
 
 ## 关于本站
 
-我将持续在这个网站上更新我的**科研进展**与**学习动态**, 并分享一些个人思考. 我也会选择性地将过往在知乎等平台发布的专业笔记和思考沉淀于此. 
+I will continuously update this website with my **research progress** and **learning activities**, and occasionally share personal reflections. Selected notes and thoughts previously published on platforms such as Zhihu would also be archived here. 
 
-欢迎通过邮件 (guitrj_sjtu@qq.com) 交流. 
+**Contacts via email** at guitrj_sjtu@qq.com are warm welcomed. 
 
-### 📖基础学习思考
+### 📖Reflections on Foundational Study
 
-本站的学习笔记将更侧重于**“思考的足迹”**而非**“知识的罗列”**。
+The notes on this site will empasize more on the **“traces of thinking”** rather than a mere **“list of knowledge”.**
 
-我在本部分关注的是在个人过去不同学习阶段中 (例如中学物理竞赛、普通物理、四大力学、量子场论、广义相对论及相关数学方法) 的思考与感悟. 个人经验有限, 但希望能为同行者提供有价值的参考.
+I focus on my reflections and takeaways over different stages of my learning (e.g., high-school physics Olympiad, undergraduate-level theorectical physics, quantum field theory, general relativity, and related mathematics). My personal experience is limited, but I hope these notes can offer useful reference points for fellow learners.
 
-未来，这里的内容也会扩展到天文及天体物理方向的专业理论学习和部分前沿技术资讯. 
+In the future, the content here will also expand to include formal study in astronomy and astrophysics, as well as selected updates on frontier techniques.
 
-### 🧑‍💻个人科研动态
+### 🧑‍💻Personal Research Updates
 
-我的研究风格倾向于**结合形式理论的洞察与半解析计算的直观性**。
+My research style tends to **combine insights from formal/analtical theory with the intuition afforded by numerical calculations**.
 
-我可能会使用轻量级数值模拟 (评判标准: 近 C 语言的优化版本在个人 PC 上运行 ~ 10<sup>0</sup>-10<sup>1</sup> 小时以内) 作为辅助手段, 将复杂的物理过程进行可视化呈现, 以辅助理论分析. 
+I may use lightweight numerical simulations as an auxiliary tool (a working criterion: an optimized implementation close to C running on a PC within roughly ~ 10<sup>0</sup>-10<sup>1</sup> hours). These computations help visualize complex physical processes and thereby support theoretical analysis.
 
-虽然我的研究手段不排斥抽象的数学工具, 但更倾向与将复杂问题化繁为简的过程, 而非诉诸纯粹繁复的抽象指标推演与形式证明. 
+While I do not avoid (sometimes maybe a little bit too) abstract mathematical tools, I prefer the process of simplifying complex problems than relying on purely elaborate/abstract formalism, such as extensive (tensor) index manipulations and formal proofs.
 
-我的研究目标是产出具有**独特见解**与**不可替代价值**的研究成果, 并力求打磨高价值、易于复现的学术工作.
+My goal is to produce research outputs with **distinct insight** and **non-substitutable value**, and to refine wide-spread academic work that is **easy to be reproduced** and **built upon**.
 
-### 🎮 个人爱好
+### 🎮 Hobbies
 
-同时欢迎交流娱乐爱好：
+I also welcome discussions about entertainment interests：
 
-- **游戏 (Games):** 主机游戏, 动作游戏 (ACT), 复古游戏, 魂类 (Souls-like), 音乐节奏 (Rhythm), ARPG, 恐怖/生存恐怖, 第三人称射击 (TPS) 等.
-- **影视 (Film/TV):** 科幻, 惊悚, 烧脑, 历史, 动作. 对编剧、导演与电影解读亦有兴趣.
-- **音乐 (Music):** 电子音乐 (Electronic), 电子舞曲 (EDM), 欧美流行/乡村, 电子流行 (Electric-pop), OST 原声带, 严肃音乐 (Classical), 氛围音乐 (Ambient), J-Pop 等. 
-- **模玩 (Hobby):** 变形金刚 (G1, 领袖之证, 真人世, IDW), 国模等; 我也是小胶佬, 手艺练习ing…
+- **Games:** Console games; action (ACT); retro games; Souls-like; rhythm; ARPG; horror/survival horror; third-person shooters (TPS); etc.
+- **Film/TV:** Sci-fi; thriller; mind-bending narratives; history; action. I am also interested in screenwriting, directing, and film analysis.
+- **Music:** Electronic, EDM, Western pop/country, Electro-pop, OST, Classical, Ambient, J-Pop; etc. 
+- **Model Kits:** Transformers (G1, *Prime*, live-action film, IDW), Gundams, domestic model lines, etc; I am still practicing building personal-made plastic models.
 
-## AI 使用
+## AI Usage
 
-近期我的快速知识获取与开发, 大量受助于 GPT 5.1, CodeX 与 Gemini 3.0 (已静默部署于 Gemini 的 Canvas 功能中), 尤其是感谢 Gemini 3.0 的前端开发知识与 CodeX 的自动化处理项目功能, 让我敢于面对一个复杂的项目库, 尝试开通运营一个个人站点. 
+Recently, my rapid knowledge acquisition and dev-work have benefited substantially from **ChatGPT**, **CodeX**, and **Gemini**. In particular, I really appreciate Gemini & CodeX’s capablity on front-end development, which made me willing to confront a complex codebase and attempt to launch and maintain a personal website.
 
 
 
-## 友情链接🤗:
+## Friendly Links🤗:
 
-上海交大物理与天文学院: [SJTU SPA](https://www.physics.sjtu.edu.cn)
+School of Physics and Astronomy, Shanghai Jiao Tong University: [SJTU SPA](https://www.physics.sjtu.edu.cn)
 
-上海交大李政道研究所: [TDLI](https://tdli.sjtu.edu.cn)
+Tsung-Dao Lee Instiute, SJTU: [TDLI](https://tdli.sjtu.edu.cn)
 
-李所会议列表: [indico](https://indico-tdli.sjtu.edu.cn)
+TDLI conference list: [indico](https://indico-tdli.sjtu.edu.cn)
 
-arXiv: [astro-ph.HE](https://arxiv.org/list/astro-ph.HE/recent), [astro-ph.EP](https://arxiv.org/list/astro-ph.EP/recent), [Dong Lai’s Publications](https://arxiv.org/search/?query=Lai%2C+Dong&searchtype=author&abstracts=hide&order=-announced_date_first&size=50)
+arXiv preprint: [astro-ph.HE](https://arxiv.org/list/astro-ph.HE/recent), [astro-ph.EP](https://arxiv.org/list/astro-ph.EP/recent), [Dong Lai’s Publications](https://arxiv.org/search/?query=Lai%2C+Dong&searchtype=author&abstracts=hide&order=-announced_date_first&size=50)
 
 Inspire HEP: [Inspire](https://inspirehep.net)
 
-ADS-astronomy: [ADS](https://ui.adsabs.harvard.edu)
+ADS (Astronomy): [ADS](https://ui.adsabs.harvard.edu)
 
-Dong Lai’s Homepage: [github.io](https://donglai6.github.io)
+Dong Lai’s Homepage: [donglai6.github.io](https://donglai6.github.io)
 
