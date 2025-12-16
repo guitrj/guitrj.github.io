@@ -13,7 +13,7 @@ redirect_from:
 
 Real-time updates will be posted on the “Blog Updates” page.
 
-(Posts at earlier times are still be written in simplified Chinese, which I don’t have enough time to translate into English.🤧)
+(Posts at earlier times are still written in simplified Chinese, which I don’t have enough time to translate into English.🤧)
 
 ## About Me
 
