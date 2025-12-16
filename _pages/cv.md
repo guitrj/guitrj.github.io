@@ -11,7 +11,7 @@ redirect_from:
 
 ## Education
 * Tsung-Dao Lee Institute, Shanghai Jiao Tong University: PhD in Astronomy/Astrophysics (2031 expected).
-* School of Physics and Astronomy, Shanghai Jiao Tong University: B.S. in Physics (Basic-Strengthening Project, 强基计划) (2026 expected).
+* School of Physics and Astronomy, Shanghai Jiao Tong University: B.S. in Physics (Strengthening Foundation Program, 强基计划) (2026 expected).
 
 ## Scientific Research Experience
 * 2023 Fall—2025 Spring: Particle physics theory
