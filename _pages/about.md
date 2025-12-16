@@ -25,7 +25,7 @@ My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**,
 
 I will continuously update this website with my **research progress** and **learning activities**, and occasionally share personal reflections. Selected notes and thoughts previously published on platforms such as Zhihu would also be archived here. 
 
-**Contacts via email** at guitrj_sjtu@qq.com are warm welcomed. 
+**Contacts via email at guitrj_sjtu@qq.com are warm welcomed.** 
 
 ### 📖Reflections on Foundational Study
 
