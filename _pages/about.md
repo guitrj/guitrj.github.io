@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "郭图@归途如稽(Tu Guo@guitrj_sjtu)"
+title: "郭图@归途如稽 (Tu Guo@guitrj_sjtu)"
 author_profile: true
 redirect_from: 
   - /about/
