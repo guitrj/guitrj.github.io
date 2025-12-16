@@ -19,7 +19,7 @@ Real-time updates will be posted on the “Blog Updates” page.
 
 My name is **Tu Guo** **(郭图)**, also known as **@归途如稽** (for example, on [Zhihu](https://www.zhihu.com/people/gui-tu-ru-ji)). I am an undergraduate student (admission in 2022, Strengthening Foundation Program/强基计划) at the School of Physics and Astronomy, **Shanghai Jiao Tong University (SJTU)**, and a direct-PhD student (admission in 2026) at the Department of Astronomy and Astrophysics, **Tsung-Dao Lee Institute (TDLI)**.
 
-My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hongjian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
+My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hong-Jian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
 
 ## About this Site
 
