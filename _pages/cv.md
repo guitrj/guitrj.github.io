@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "个人简历"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,25 +9,25 @@ redirect_from:
 
 {% include base_path %}
 
-## 教育
-* 上海交通大学, 李政道研究所: 天文学博士 (预计 2031 年毕业).
-* 上海交通大学, 物理与天文学院: 物理学学士 (预计 2026 年毕业).
+## Education
+* Tsung-Dao Lee Institute, Shanghai Jiao Tong University: PhD in Astronomy/Astrophysics (2031 expected).
+* School of Physics and Astronomy, Shanghai Jiao Tong University: B.S. in Physics (Basic-Strengthening Project, 强基计划) (2026 expected).
 
-## 科研
-* 2023 秋—2025 春: 粒子物理理论
-  * 导师: 王伟, 何红建
-  * 研究方向: 圈图计算与费曼积分, 量子色动力学有效理论, 非微扰量子场论.
-* 2025 春—至今: 天体物理理论
-  * 导师: 赖东 (Dong Lai)
-  * 研究方向: 致密天体 (磁星, 黑洞双星, 潮汐瓦解事件等), 系外行星 (行星轨道动力学, 行星刚体动力学等) 与天体物理动力学 (非线性力学, 混沌现象等) 
+## Scientific Research Experience
+* 2023 Fall—2025 Spring: Particle physics theory
+  * Advisor: Wei Wang (王伟), Hong-Jian He (何红建)
+  * Research topics: Loop-diagram calculation with Feynman integrals, Effective field theory for quantum chromodynamics, Non-pertubative quantum field theory methods.
+* 2025 Spring—now: Theorectical astrophysics
+  * Advisor: Dong Lai (赖东)
+  * Research topics: Compact objects (magnetars, neutron stars, black hole binaries, TDEs, etc.), Exoplanetary dynamics (orbital dynamics, rigid-body dynamics, spin-orbit dynamics, etc.), astrophysical dynamics (non-linear, chaos, hydrodynamics, etc.) 
 
-## 出版物 / 学术论文
+## Publications
 
 <ul>{% for post in site.publications reversed %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
-学术报告
+Academic Reports
 ------
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
