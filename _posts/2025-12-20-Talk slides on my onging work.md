@@ -9,4 +9,6 @@ tags:
   - 嗨皮一下
 ---
 
-I gave a talk on my research project yesterday on group meeting, which is a little bit interesting. 
+I gave a talk on my research project yesterday on group meeting, which is a little bit interesting… 
+
+ [Tu_Spin attractors.pdf](/files/Tu_Spin attractors.pdf) 
