@@ -9,4 +9,4 @@ location: "TDLI"
 
 This talk summarizes my main result in recent research project, journal article for MNRAS/APJ is in preparation…
 
- [Tu_Spin attractors.pdf](../files/Tu_Spin attractors.pdf) 
+ [Tu_Spin attractors.pdf](/files/Tu_Spin attractors.pdf) 
