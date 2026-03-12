@@ -9,11 +9,11 @@
 
 main:
 
-  - title: "Blog Updates"
-    url: /year-archive/
+  #- title: "Blog Updates"
+  #  url: /year-archive/
 
-  #- title: "出版物"
-  #  url: /publications/
+  - title: "publications"
+    url: /publications/
 
   #- title: "学术报告"
   #  url: /talks/
