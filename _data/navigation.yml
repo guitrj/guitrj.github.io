@@ -12,8 +12,8 @@ main:
   #- title: "Blog Updates"
   #  url: /year-archive/
 
-  - title: "publications"
-    url: /publications/
+  #- title: "publications"
+  #  url: /publications/
 
   #- title: "学术报告"
   #  url: /talks/
