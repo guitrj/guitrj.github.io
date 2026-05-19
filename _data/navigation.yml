@@ -9,8 +9,8 @@
 
 main:
 
-  #- title: "Blog Updates"
-  #  url: /year-archive/
+  - title: "Blog Updates"
+    url: /year-archive/
 
   #- title: "publications"
   #  url: /publications/
