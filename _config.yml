@@ -24,8 +24,8 @@ repository               : "guitrj/guitrj.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Tu Guo / 郭图@归途如稽"
-  bio              : "SJTU/TDLI Undergraduate"
+  name             : "Tu Guo(郭图)"
+  bio              : "SJTU/TDLI Ph.D student"
   location         : "Shanghai, China"
   employer         : "SJTU/TDLI"
   uri              : "https://guitrj.github.io"
@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : "https://arxiv.org/search/?query=Guo%2C+Tu&searchtype=author&abstracts=hide&order=-announced_date_first&size=50"  # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : "https://inspirehep.net/authors/2946420"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0002-1484-9278"

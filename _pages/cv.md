@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Curriculum Vitae"
+title: "Curriculum Vitae (CV)"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,16 +10,16 @@ redirect_from:
 {% include base_path %}
 
 ## Education
-* Tsung-Dao Lee Institute, Shanghai Jiao Tong University: PhD in Astronomy/Astrophysics (2031 expected).
-* School of Physics and Astronomy, Shanghai Jiao Tong University: B.S. in Physics (Strengthening Foundation Program, 强基计划) (2026 expected).
+* Tsung-Dao Lee Institute, SJTU: PhD in Astrophysics (2026–2031 expected).
+* School of Physics and Astronomy, SJTU: B.S. in Physics (2022–2026, Qiang-Ji Program, 强基计划).
 
 ## Scientific Research Experience
 * 2023 Fall—2025 Spring: Particle physics theory
-  * Advisor: Wei Wang (王伟), Hong-Jian He (何红建)
-  * Research topics: Loop-diagram calculation with Feynman integrals, Effective field theory for quantum chromodynamics, Non-pertubative quantum field theory methods.
+  * Mentor: Wei Wang (王伟), Hong–Jian He (何红建)
+  * Research topics: Scattering amplitude, Feynman integrals, EFT for QCD, Methods for non-pertubative QFT.
 * 2025 Spring—now: Theorectical astrophysics
-  * Advisor: Dong Lai (赖东)
-  * Research topics: Compact objects (magnetars, neutron stars, black hole binaries, TDEs, etc.), Exoplanetary dynamics (orbital dynamics, rigid-body dynamics, spin-orbit dynamics, etc.), astrophysical dynamics (non-linear, chaos, hydrodynamics, etc.) 
+  * Mentor: Dong Lai (赖东)
+  * Research topics: Compact objects, exoplanetary dynamics, astrophysical dynamics, gravitational-wave astrophysics.
 
 ## Publications
 
@@ -27,7 +27,7 @@ redirect_from:
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
-Academic Reports
+Academic Reports / Talks 
 ------
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}

@@ -1,9 +1,9 @@
 ---
-title: "Nature/Nature Machine Intelligence: PhysMaster: Building an Autonomous AI Physicist for Theoretical and Computational Physics Research"
+title: "ICML 2026 AI4Physics Workshop: PhysMaster: Building an Autonomous AI Physicist for Theoretical and Computational Physics Research"
 collection: publications
 category: paper
 date: 2025-05-13
-venue: 'Nature/Nature Machine Intelligence'
+venue: 'ICML 2026'
 paperurl: 'https://arxiv.org/abs/2512.19799v1'
 ---
 
