@@ -16,10 +16,16 @@ redirect_from:
 ## Scientific Research Experience
 * 2023 Fall—2025 Spring: Particle physics theory
   * Mentor: Wei Wang (王伟), Hong–Jian He (何红建)
-  * Research topics: Scattering amplitude, Feynman integrals, EFT for QCD, Methods for non-pertubative QFT.
+  * Research topics: Scattering amplitude, Feynman integrals, EFT for QCD, methods for non-pertubative QFT.
 * 2025 Spring—now: Theorectical astrophysics
   * Mentor: Dong Lai (赖东)
-  * Research topics: Compact objects, exoplanetary dynamics, astrophysical dynamics, gravitational-wave astrophysics.
+  * Research topics: Compact objects, exoplanets, astrophysical dynamics, gravitational-wave astrophysics.
+
+## Hornors 
+
+- The Best Bachelor Thesis (Top1%) of Shanghai Jiao Tong University, 2026.
+- The Outstanding Graduate of Shanghai Jiao Tong University, 2026. 
+- The Outstanding B.S. Thesis of School of Physics and Astronomy, SJTU, 2026. 
 
 ## Publications
 
