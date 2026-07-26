@@ -17,7 +17,7 @@ Real-time updates will be posted on the “Blog Updates” page.
 
 ## About Me
 
-My name is **Tu Guo** **(郭图)**, a.k.a **@归途如稽** (e.g., on [Zhihu](https://www.zhihu.com/people/gui-tu-ru-ji)). I was an undergraduate student (2022–2026, Qiang-Ji program, 强基计划) at the School of Physics and Astronomy, **Shanghai Jiao Tong University (SJTU)**, and a Ph.D student (2026–2031, expected) at the Department of Astronomy and Astrophysics, **Tsung-Dao Lee Institute (TDLI)**.
+My name is **Tu Guo** **(郭图)**, a.k.a **@归途如稽** (e.g., on [Zhihu](https://www.zhihu.com/people/gui-tu-ru-ji)). I was an undergraduate student (2022–2026, Qiang-Ji program, 强基计划) at the School of Physics and Astronomy, **Shanghai Jiao Tong University (SJTU)**, and now am an upcoming Ph.D student (2026–2031, expected) at the Department of Astronomy and Astrophysics, **Tsung-Dao Lee Institute (TDLI)**.
 
 My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hong-Jian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
 
@@ -27,7 +27,7 @@ My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**,
 
 ## 🧑‍💻Personal Research Updates
 
-My research style tends to **combine insights from formal/analtical theory with the intuition inspired by numerical calculations**. My goal is to produce researches with **distinct insight** and **irreplaceable value**. 
+My research style tends to **combine insights from analytical theory with the intuition inspired by numerical calculations**. My goal is to produce researches with **distinct insight** and **irreplaceable value**, which reveal the physical structures in astrophysical systems with the highest robustness.
 
 
 
@@ -38,7 +38,7 @@ I also welcome discussions about entertainment interests：
 - **Games:** Console games; action (ACT); retro games; Souls-like; rhythm; ARPG; horror; survival horror; TPS; sandbox, etc.
 - **Film/TV:** Sci-fi; thriller; mind-bending movies; history; action. I am also interested in screenwriting, directing, and film analysis.
 - **Music:** Electronic, EDM, Western pop/country, Electro-pop, OST, Classical, Ambient, J-Pop; etc. 
-- **Model Kits:** Transformers (G1, IDW, live-action), Bandai hobbits (Gundam, 30mm), Chinese (originally-designed) models, etc. 
+- **Model Kits:** Transformers (G1, IDW, live-action), Bandai hobbies (Gundam, 30mm), etc. 
 
 
 

@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+For a more detailed version, see [PDF file.](/files/CV_Tu Guo.pdf)
+
 ## Education
 * Tsung-Dao Lee Institute, SJTU: PhD in Astrophysics (2026–2031 expected).
 * School of Physics and Astronomy, SJTU: B.S. in Physics (2022–2026, Qiang-Ji Program, 强基计划).
