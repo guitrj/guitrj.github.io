@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-For a more detailed version, see [PDF file.](/files/CV_Tu Guo.pdf)
-
 ## Education
 * Tsung-Dao Lee Institute, SJTU: PhD in Astrophysics (2026–2031 expected).
 * School of Physics and Astronomy, SJTU: B.S. in Physics (2022–2026, Qiang-Ji Program, 强基计划).
@@ -28,6 +26,8 @@ For a more detailed version, see [PDF file.](/files/CV_Tu Guo.pdf)
 - The Best Bachelor Thesis (Top1%) of Shanghai Jiao Tong University, 2026.
 - The Outstanding Graduate of Shanghai Jiao Tong University, 2026. 
 - The Outstanding B.S. Thesis of School of Physics and Astronomy, SJTU, 2026. 
+
+(For a more detailed version of CV, see [PDF file.](/files/CV_Tu Guo.pdf))
 
 ## Publications
 
