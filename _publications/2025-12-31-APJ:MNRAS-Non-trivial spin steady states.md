@@ -3,7 +3,7 @@ title: "ApJ to be submitted: Beyond Cassini States: Analytical Framework for Non
 collection: publications
 category: paper
 date: 2026-12-31
-venue: 'Prepraed for submission to ApJ'
+venue: 'ApJ to be submitted'
 paperurl: 'coming soom'
 ---
 

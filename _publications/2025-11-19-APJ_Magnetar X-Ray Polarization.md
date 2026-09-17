@@ -2,7 +2,7 @@
 title: "ApJ: Impact of Resonant Compton Scattering on Magnetar X-Ray Polarization with QED Vacuum Resonance"
 collection: publications
 category: paper
-date: 2025-05-13
+date: 2026-07-01
 venue: 'The Astrophysical Journal'
 paperurl: 'https://arxiv.org/abs/2603.08119'
 ---
