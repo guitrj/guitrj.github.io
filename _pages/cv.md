@@ -23,11 +23,9 @@ redirect_from:
 
 ## Hornors 
 
-- The Best Bachelor Thesis (Top1%) of Shanghai Jiao Tong University, 2026.
-- The Outstanding Graduate of Shanghai Jiao Tong University, 2026. 
-- The Outstanding B.S. Thesis of School of Physics and Astronomy, SJTU, 2026. 
-
-(For a more detailed version of CV, see [PDF file.](/files/CV_Tu Guo.pdf))
+- **The Best Bachelor Thesis (Top1%) of Shanghai Jiao Tong University, 2026.**
+- **The Outstanding Graduate of Shanghai Jiao Tong University, 2026.** 
+- **The Outstanding B.S. Thesis of School of Physics and Astronomy, SJTU, 2026.** 
 
 ## Publications
 

@@ -1,9 +1,9 @@
 ---
-title: "ICML 2026 AI4Physics Workshop: PhysMaster: Building an Autonomous AI Physicist for Theoretical and Computational Physics Research"
+title: "ICML 2026 accepted / Nat. Comm. submitted: PhysMaster: Building an Autonomous AI Physicist for Theoretical and Computational Physics Research"
 collection: publications
 category: paper
 date: 2025-05-13
-venue: 'ICML 2026'
+venue: 'ICML 2026 accepted / Nat. Comm. submitted'
 paperurl: 'https://arxiv.org/abs/2512.19799v1'
 ---
 

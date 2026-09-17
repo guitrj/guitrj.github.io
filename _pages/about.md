@@ -17,11 +17,11 @@ Real-time updates will be posted on the “Blog Updates” page.
 
 ## About Me
 
-My name is **Tu Guo** **(郭图)**, a.k.a **@归途如稽** (e.g., on [Zhihu](https://www.zhihu.com/people/gui-tu-ru-ji)). I was an undergraduate student (2022–2026, Qiang-Ji program, 强基计划) at the School of Physics and Astronomy, **Shanghai Jiao Tong University (SJTU)**, and now am an upcoming Ph.D student (2026–2031, expected) at the Department of Astronomy and Astrophysics, **Tsung-Dao Lee Institute (TDLI)**.
+My name is **Tu Guo** **(郭图)**. I was an undergraduate student (2022–2026, Qiang-Ji program, 强基计划) at the School of Physics and Astronomy, **Shanghai Jiao Tong University (SJTU)**, and now am an upcoming Ph.D student (2026–2031, expected) at the Division of Astronomy and Astrophysics, **Tsung-Dao Lee Institute (TDLI)**.
 
-My previous research interests included **hep-th**, **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hong-Jian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
+My previous research interests in undergraduate years included **hep-ph**, and **hep-lat**, under the supervision of Prof. [Wei Wang](https://www.physics.sjtu.edu.cn/jsml/wangwei.html) **(王伟)** and Prof. [Hong-Jian He](https://www.physics.sjtu.edu.cn/jsml/hehongjian.html) **(何红建)**. My current research focuses on **astro-ph**, under the supervision of Prof. [Dong Lai](https://donglai6.github.io) **(赖东)**, with topics including **compact objects** and **exoplanets**.
 
-**Contacts via email at [guitrj_sjtu@qq.com]() are warm welcomed.** 
+**Contacts via email at [tu.guo_TDLI@sjtu.edu.cn]() are warm welcomed.** 
 
 
 
@@ -35,10 +35,10 @@ My research style tends to **combine insights from analytical theory with the in
 
 I also welcome discussions about entertainment interests：
 
-- **Games:** Console games; action (ACT); retro games; Souls-like; rhythm; ARPG; horror; survival horror; TPS; sandbox, etc.
-- **Film/TV:** Sci-fi; thriller; mind-bending movies; history; action. I am also interested in screenwriting, directing, and film analysis.
-- **Music:** Electronic, EDM, Western pop/country, Electro-pop, OST, Classical, Ambient, J-Pop; etc. 
-- **Model Kits:** Transformers (G1, IDW, live-action), Bandai hobbies (Gundam, 30mm), etc. 
+- **Games:** Souls-like; ARPG; console games; etc.
+- **Film/TV:** Sci-fi; thriller; action.
+- **Music:** Electronic, EDM, pop, Ambient, J-Pop; etc. 
+- **Model Kits:** Transformers (G1, IDW, movie series), Bandai hobbies (Gundam UC/Seed, 30mm), etc. 
 
 
 
@@ -48,7 +48,7 @@ School of Physics and Astronomy, Shanghai Jiao Tong University: [SJTU SPA](https
 
 Tsung-Dao Lee Instiute, SJTU: [TDLI](https://tdli.sjtu.edu.cn)
 
-TDLI conference list: [indico](https://indico-tdli.sjtu.edu.cn)
+TDLI indico: [indico](https://indico-tdli.sjtu.edu.cn)
 
 arXiv preprint: [astro-ph.HE](https://arxiv.org/list/astro-ph.HE/recent), [astro-ph.EP](https://arxiv.org/list/astro-ph.EP/recent), [Dong Lai’s Publications](https://arxiv.org/search/?query=Lai%2C+Dong&searchtype=author&abstracts=hide&order=-announced_date_first&size=50)
 
